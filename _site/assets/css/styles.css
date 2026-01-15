@@ -67,6 +67,7 @@ body{
     display: none;
     padding-left: 8px;
     background-color: rgba(99, 85, 117, 0.75);
+    transition: 0.3s;
 }
 
 .dropdownBox a.dropdownLink{

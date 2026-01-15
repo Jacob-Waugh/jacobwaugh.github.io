@@ -9,7 +9,7 @@ function closeNav(){
   document.getElementById("sideNav").style.width = "0px";
   document.body.style.backgroundColor = "white";
   dropdownBox.style.display = "none";
-  dropdown[0].innerHTML = "Projects &#9662;";
+  this.innerHTML = "Projects &#9662;";
 }
 
 //Dropdown menu:
@@ -22,11 +22,11 @@ for (i = 0; i < dropdown.length; i++){
     var dropdownBox = this.nextElementSibling;
     if(dropdownBox.style.display === "block"){
       dropdownBox.style.display = "none";
-      dropdown[i].innerHTML = "Projects &#9662;";
+      this.innerHTML = "Projects &#9662;";
     }
     else{
       dropdownBox.style.display = "block";
-      dropdown[i].innerHTML = "Projects &#9652;";
+      this.innerHTML = "Projects &#9652;";
     }
   })
 }

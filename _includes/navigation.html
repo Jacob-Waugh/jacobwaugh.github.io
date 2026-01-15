@@ -1,7 +1,18 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %} style="color: red;" {% endif %}>
+<div class="header">
+  <h1>Jacob Waugh</h1>
+  <span onclick="openNav()">&#9776;</span>
+  <nav id="sideNav" class="sideNav">
+    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
       {{ item.name }}
     </a>
-  {% endfor %}
-</nav>
+    {% endfor %}
+    <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
+    <div class="dropdownBox">
+      <a href="#" class="dropdownLink">3D Models</a>
+      <a href="#" class="dropdownLink">Web/JavaScript</a>
+    </div>
+  </nav>
+</div>
+<script src="assets/js/NavMenu.js"></script>

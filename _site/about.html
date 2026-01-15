@@ -3,19 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>About</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <nav>
-  
+    <div class="header">
+  <h1>Jacob Waugh</h1>
+  <span onclick="openNav()">&#9776;</span>
+  <nav id="sideNav" class="sideNav">
+    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+    
     <a href="/" >
       Home
     </a>
-  
-    <a href="/about.html"  style="color: red;" >
+    
+    <a href="/about.html"  class="navCurrent" >
       About
     </a>
-  
-</nav>
+    
+    <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
+    <div class="dropdownBox">
+      <a href="#" class="dropdownLink">3D Models</a>
+      <a href="#" class="dropdownLink">Web/JavaScript</a>
+    </div>
+  </nav>
+</div>
+<script src="assets/js/NavMenu.js"></script>
     <h1 id="about-page">About page</h1>
 
 <p>This page tells you a little bit about me.</p>

@@ -1,4 +1,15 @@
 - name: Home
   link: /
+  dropdown: "no"
 - name: About
   link: /about.html
+  dropdown: "no"
+- name: Games
+  link: /games
+  dropdown: "yes"
+- name: 3D Modeling
+  link: /models
+  dropdown: "yes"
+- name: testing
+  link: /about.html
+  dropdown: "yes"

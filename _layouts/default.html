@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
-  <body>
-    {% include navigation.html %}
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  {% include navigation.html %}
+  <div style="padding: 350px 0 150px 0;">
+    {% if page.url != "/" %}
+    <a href="/" class="homeBtn">&lt; Home</a>
+    {% endif %}
+
     {{ content }}
-  </body>
+  </div>
+</body>
+
 </html>

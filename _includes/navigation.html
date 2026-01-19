@@ -1,18 +1,26 @@
-<div class="header">
-  <h1>Jacob Waugh</h1>
+<div id="header" class="header">
+
+  <h1 id="name">Jacob Waugh</h1>
   <span onclick="openNav()">&#9776;</span>
   <nav id="sideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
-      {{ item.name }}
-    </a>
+      {% if item.dropdown == "no" %}
+        <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
+          {{ item.name }}
+        </a>
+      {% endif %}
     {% endfor %}
     <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
     <div class="dropdownBox">
-      <a href="#" class="dropdownLink">3D Models</a>
-      <a href="#" class="dropdownLink">Web/JavaScript</a>
+      {% for item in site.data.navigation %}
+        {% if item.dropdown == "yes" %}
+          <a href="{{ item.link }}" class="dropdownLink" {% if page.url==item.link %} class="navCurrent dropdownLink" {% endif %}>
+            {{ item.name }}
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
   </nav>
 </div>
-<script src="assets/js/NavMenu.js"></script>
+<script src="{{ site.baseurl }}/assets/js/NavMenu.js"></script>

@@ -10,6 +10,3 @@
 - name: 3D Modeling
   link: /models
   dropdown: "yes"
-- name: testing
-  link: /about.html
-  dropdown: "yes"

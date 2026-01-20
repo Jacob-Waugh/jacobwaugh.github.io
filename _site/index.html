@@ -5,9 +5,13 @@
   <meta charset="utf-8">
   <title>Jacob Waugh - Home</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/site.webmanifest">
 </head>
 
-<body>
+<body style="background-color: rgb(58, 58, 74);">
   <div id="header" class="header">
 
   <h1 id="name">Jacob Waugh</h1>
@@ -25,8 +29,6 @@
         <a href="/about.html" >
           About
         </a>
-      
-    
       
     
       
@@ -52,17 +54,11 @@
           </a>
         
       
-        
-          <a href="/about.html" class="dropdownLink" >
-            testing
-          </a>
-        
-      
     </div>
   </nav>
 </div>
 <script src="/assets/js/NavMenu.js"></script>
-  <div style="padding: 350px 0 150px 0;">
+  <div style="padding: 300px 0 150px 0;">
     
 
     <style>
@@ -76,28 +72,70 @@
     outline: solid rgba(221, 215, 228, 0.721);
     border-radius: 10px;
     padding: 10px;
-    background-color: rgba(141, 99, 180, 0.133);
-    color: rgb(104, 73, 144);
-    font-size: 36px;
-    font-size: 36px;
+    background-color: rgba(141, 99, 180, 0.37);
+    color: rgb(191, 174, 214);
+    font-size: 26px;
+  }
+
+  ul {
+    color: white;
+    list-style-type: square;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pages {
+    background-color: rgb(156, 156, 181);
+    overflow: hidden;
+    padding: 0 50px;
+    max-width: 950px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .pageCatagory {
+    display: inline-block;
+    width: 23%;
+    padding: 12px 0;
+    margin: 1em;
+    text-align: left;
+  }
+
+  .pageLink {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    transition: 0.2s;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .pageLink:hover {
+    background-color: rgb(40, 40, 66);
   }
 </style>
 
 <div class="linkBlock">
   <h2><a href="about.html" class="linkBtn">About Me</a></h2>
 </div>
-<h1 class="test">hello world!</h1>
 
-<!--
+<div class="pages">
+  <div class="pageCatagory">
+    <h2><em>Games</em></h2>
+    <ul>
+      <li><a href="/about.html" class="pageLink">Edge Case</a></li>
+    </ul>
+  </div>
 
-  <h2>
-    <a href="/models/Crate/">
-      Photorealistic Crate 
-    </a>
-    (3d-model)
-  </h2>
-
--->
+  <div class="pageCatagory">
+    <h2><em>3D Models</em></h2>
+    <ul>
+      <li><a href="/models/crate" class="pageLink">Photorealistic Crate</a></li>
+    </ul>
+  </div>
+</div>
   </div>
 </body>
 

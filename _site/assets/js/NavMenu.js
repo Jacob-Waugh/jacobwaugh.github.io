@@ -5,7 +5,7 @@ function openNav(){
 
 function closeNav(){
   document.getElementById("sideNav").style.width = "0px";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "rgb(58, 58, 74)";
   this.innerHTML = "Projects &#9662;";
 }
 

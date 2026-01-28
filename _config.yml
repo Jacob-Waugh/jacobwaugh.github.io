@@ -5,4 +5,7 @@ collections:
   models:
     output: true
     permalink: /models/:path/
-baseurl:
+
+domain: JacobWaugh.github.io
+
+url: https://jacobwaugh.github.io

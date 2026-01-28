@@ -5,20 +5,21 @@
   <nav id="sideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     {% for item in site.data.navigation %}
-      {% if item.dropdown == "no" %}
-        <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
-          {{ item.name }}
-        </a>
-      {% endif %}
+    {% if item.dropdown == "no" %}
+    <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
+      {{ item.name }}
+    </a>
+    {% endif %}
     {% endfor %}
-    <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
+    <button class="dropdownBtn" style="visibility: hidden;">Projects &#9662;<i class="caret"></i></button>
     <div class="dropdownBox">
       {% for item in site.data.navigation %}
-        {% if item.dropdown == "yes" %}
-          <a href="{{ item.link }}" class="dropdownLink" {% if page.url==item.link %} class="navCurrent dropdownLink" {% endif %}>
-            {{ item.name }}
-          </a>
-        {% endif %}
+      {% if item.dropdown == "yes" %}
+      <a href="{{ item.link }}" class="dropdownLink" {% if page.url==item.link %} class="navCurrent dropdownLink" {%
+        endif %}>
+        {{ item.name }}
+      </a>
+      {% endif %}
       {% endfor %}
     </div>
   </nav>

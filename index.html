@@ -21,35 +21,45 @@ title: Jacob Waugh - Home
   ul {
     color: white;
     list-style-type: square;
+    list-style-position: inside;
     padding: 0;
     margin: 0;
+  }
+
+  li {
+    padding: 3px 2px 3px 5px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .pages {
     background-color: rgb(156, 156, 181);
     overflow: hidden;
-    padding: 0 50px;
+    padding: 0 25px;
     max-width: 950px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    border-radius: 5px;
   }
 
   .pageCatagory {
-    display: inline-block;
-    width: 23%;
-    padding: 12px 0;
-    margin: 1em;
-    text-align: left;
+    display: inline-table;
+    width: 20%;
+    padding: 2px 8px 12px 15px;
+    margin: 10px;
+    background-color: rgba(78, 78, 109, 0.332);
+    border-radius: 10px;
   }
 
   .pageLink {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
+    color: rgb(230, 230, 230);
+    font-size: 18px;
     transition: 0.2s;
-    padding: 6px;
+    padding: 3px 5px;
     border-radius: 5px;
   }
 
@@ -66,7 +76,7 @@ title: Jacob Waugh - Home
   <div class="pageCatagory">
     <h2><em>Games</em></h2>
     <ul>
-      <li><a href="/about.html" class="pageLink">Edge Case</a></li>
+      <li><a href="/games/EdgeCase" class="pageLink">Edge Case</a></li>
     </ul>
   </div>
 
@@ -74,6 +84,20 @@ title: Jacob Waugh - Home
     <h2><em>3D Models</em></h2>
     <ul>
       <li><a href="/models/crate" class="pageLink">Photorealistic Crate</a></li>
+    </ul>
+  </div>
+
+  <div class="pageCatagory">
+    <h2><em>Animations</em></h2>
+    <ul>
+      <li><a href="/" class="pageLink">"Not-so-still life"</a></li>
+      <li><a href="/" class="pageLink">Rooftop Parkour</a></li>
+    </ul>
+
+  </div>
+  <div class="pageCatagory" style="opacity: 65%;">
+    <h2><em>To Be Added...</em></h2>
+    <ul>
     </ul>
   </div>
 </div>

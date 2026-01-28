@@ -19,46 +19,46 @@
   <nav id="sideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     
-      
-        <a href="/"  class="navCurrent" >
-          Home
-        </a>
-      
     
-      
-        <a href="/about.html" >
-          About
-        </a>
-      
+    <a href="/"  class="navCurrent" >
+      Home
+    </a>
     
-      
     
-      
     
-    <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
+    <a href="/about.html" >
+      About
+    </a>
+    
+    
+    
+    
+    
+    
+    <button class="dropdownBtn" style="visibility: hidden;">Projects &#9662;<i class="caret"></i></button>
     <div class="dropdownBox">
       
-        
       
-        
       
-        
-          <a href="/games" class="dropdownLink" >
-            Games
-          </a>
-        
       
-        
-          <a href="/models" class="dropdownLink" >
-            3D Modeling
-          </a>
-        
+      
+      
+      <a href="/games" class="dropdownLink" >
+        Games
+      </a>
+      
+      
+      
+      <a href="/models" class="dropdownLink" >
+        3D Modeling
+      </a>
+      
       
     </div>
   </nav>
 </div>
 <script src="/assets/js/NavMenu.js"></script>
-  <div style="padding: 300px 0 150px 0;">
+  <div style="padding: 320px 0 150px 0;">
     
 
     <style>
@@ -80,35 +80,45 @@
   ul {
     color: white;
     list-style-type: square;
+    list-style-position: inside;
     padding: 0;
     margin: 0;
+  }
+
+  li {
+    padding: 3px 2px 3px 5px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .pages {
     background-color: rgb(156, 156, 181);
     overflow: hidden;
-    padding: 0 50px;
+    padding: 0 25px;
     max-width: 950px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    border-radius: 5px;
   }
 
   .pageCatagory {
-    display: inline-block;
-    width: 23%;
-    padding: 12px 0;
-    margin: 1em;
-    text-align: left;
+    display: inline-table;
+    width: 20%;
+    padding: 2px 8px 12px 15px;
+    margin: 10px;
+    background-color: rgba(78, 78, 109, 0.332);
+    border-radius: 10px;
   }
 
   .pageLink {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
+    color: rgb(230, 230, 230);
+    font-size: 18px;
     transition: 0.2s;
-    padding: 6px;
+    padding: 3px 5px;
     border-radius: 5px;
   }
 
@@ -125,7 +135,7 @@
   <div class="pageCatagory">
     <h2><em>Games</em></h2>
     <ul>
-      <li><a href="/about.html" class="pageLink">Edge Case</a></li>
+      <li><a href="/games/EdgeCase" class="pageLink">Edge Case</a></li>
     </ul>
   </div>
 
@@ -133,6 +143,20 @@
     <h2><em>3D Models</em></h2>
     <ul>
       <li><a href="/models/crate" class="pageLink">Photorealistic Crate</a></li>
+    </ul>
+  </div>
+
+  <div class="pageCatagory">
+    <h2><em>Animations</em></h2>
+    <ul>
+      <li><a href="/" class="pageLink">"Not-so-still life"</a></li>
+      <li><a href="/" class="pageLink">Rooftop Parkour</a></li>
+    </ul>
+
+  </div>
+  <div class="pageCatagory" style="opacity: 65%;">
+    <h2><em>To Be Added...</em></h2>
+    <ul>
     </ul>
   </div>
 </div>

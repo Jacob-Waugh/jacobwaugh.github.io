@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jacob Waugh - About
+permalink: /about
 ---
 <style>
   .border {
@@ -30,11 +31,11 @@ title: Jacob Waugh - About
 
   p {
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
   }
 
-  h4 {
+  h3 {
     margin: 0;
     line-height: 25px;
   }
@@ -51,12 +52,12 @@ title: Jacob Waugh - About
   </h1>
   <div class="about">
     <img src="assets/images/Self_Pic.jpg" alt="Picture of me" class="selfPic">
-    <h3>Hello!</h3>
-    <h4>I was born and raised in Chapel Hill, NC, and grew up playing all kinds of games.</h4>
+    <h2>Hello!</h2>
+    <h3>I was born and raised in Chapel Hill, NC, and grew up playing all kinds of games.</h3>
     <p>I find that I'm naturally curious in how games work, and am constantly thinking about the behind-the-scenes
       aspects.</p>
     <hr>
-    <h4>I graduated from Wake Tech with an AAS in Simulation & Game Development in 2025.</h4>
+    <h3>I graduated from Wake Tech with an AAS in Simulation & Game Development in 2025.</h3>
     <p>While attending, I learned
       about many different aspects and disiplines involved in the industry, and gained lots of experience working with
       others on various projects. </p>

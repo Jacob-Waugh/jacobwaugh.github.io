@@ -5,3 +5,6 @@ collections:
   models:
     output: true
     permalink: /models/:path/
+url: "https://jacob-waugh.github.io/jacobwaugh.github.io/"
+plugins:
+  - jekyll-sitemap

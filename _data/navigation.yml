@@ -1,12 +1,12 @@
 - name: Home
-  link: /
+  link: 
   dropdown: "no"
 - name: About
-  link: /about.html
+  link: about.html
   dropdown: "no"
 - name: Games
-  link: /games
+  link: games
   dropdown: "yes"
 - name: 3D Modeling
-  link: /models
+  link: models
   dropdown: "yes"

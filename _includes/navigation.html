@@ -6,7 +6,7 @@
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
     {% for item in site.data.navigation %}
     {% if item.dropdown == "no" %}
-    <a href="{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
+    <a href="{{ site.baseurl }}/{{ item.link }}" {% if page.url==item.link %} class="navCurrent" {% endif %}>
       {{ item.name }}
     </a>
     {% endif %}

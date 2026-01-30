@@ -6,6 +6,6 @@ collections:
     output: true
     permalink: /models/:path/
 baseurl: /jacobwaugh.github.io
-url: "https://jacob-waugh.github.io/jacobwaugh.github.io/"
+url: "https://jacobwaugh.com/"
 plugins:
   - jekyll-sitemap

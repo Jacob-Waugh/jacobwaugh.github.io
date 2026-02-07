@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="{{ site.baseurl }}/assets/images/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl }}/assets/images/favicon/site.webmanifest">
 </head>
 
 <body style="background-color: rgb(58, 58, 74);">
   {% include navigation.html %}
-  <div style="padding: 340px 0 150px 0;">
+  <div style="padding: 250px 0 150px 0;">
     {% if page.url != "/" %}
     <button class="homeBtn" onclick="history.back()">&lt; Back</button>
     {% endif %}

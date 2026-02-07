@@ -5,12 +5,56 @@ title: Jacob Waugh - Edge Case
 tags: game
 ---
 <style>
-    .bodyOffset{
-        display: inline-block;
-        margin-left: 80px;
-    }
+  .border {
+    background-color: rgb(156, 156, 181);
+    border-radius: 5px;
+    margin: 40px;
+    justify-content: center;
+  }
+
+  .logoContainer{
+    display: block;
+    justify-content: center;
+  }
+
+  .logo{
+    display: flex;
+    width: 25%;
+    margin: auto;
+  }
+
+  .download{
+    text-align: center;
+    margin: 6px;
+    padding-bottom: 16px;
+  }
+  
+  .photoBar{
+    border: 4px solid rgba(50, 75, 120, 0.5);
+    display: inline-block;
+    justify-content: right;
+  }
+
+  .screenshotSide{
+    width: 25%;
+  }
+
+  p{
+    padding: 16px;
+  }
 </style>
 
-<div class="bodyOffset">
-    <h1>Edge Case page</h1>
+<div class="border">
+  <div class="logoContainer">
+    <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCaseLogo.png" alt="Edge Case Logo" class="logo">
+  </div>
+  <h3 class="download"><a href="https://smnthgn.itch.io/edge-case">Download on Itch.io</a></h3>
+  <br>
+  <div class="photoBar">
+    <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCase_Parking.png" class="screenshotSide">
+  </div>
+  <div class="description">
+    <p>Edge Case is a 3D exploration game made in Unreal Engine. It was made in a group with other Wake Tech students for our final project.</p>
+    <p>test</p>
+  </div>
 </div>

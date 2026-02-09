@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <title>Jacob Waugh - Edge Case</title>
   <link rel="stylesheet" href="/jacobwaugh.github.io/assets/css/styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/assets/images/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacobwaugh.github.io/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacobwaugh.github.io/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacobwaugh.github.io/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/jacobwaugh.github.io/assets/images/favicon/site.webmanifest">
 </head>
 
 <body style="background-color: rgb(58, 58, 74);">
@@ -58,12 +58,116 @@
   </nav>
 </div>
 <script src="/jacobwaugh.github.io/assets/js/NavMenu.js"></script>
-  <div style="padding: 320px 0 150px 0;">
+  <div style="padding: 250px 0 150px 0;">
     
     <button class="homeBtn" onclick="history.back()">&lt; Back</button>
     
 
-    <h1>Edge Case page</h1>
+    <style>
+  .border {
+    background-color: rgb(156, 156, 181);
+    border-radius: 5px;
+    margin: 40px;
+    justify-content: center;
+  }
+
+  .logoContainer{
+    display: block;
+    justify-content: center;
+  }
+
+  .logo{
+    display: flex;
+    width: 25%;
+    margin: auto;
+  }
+
+  .download{
+    text-align: center;
+    margin: 6px;
+  }
+  
+  .content{
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .photoBar{
+    border: 3px solid rgba(15, 100, 120, 0.85);
+    border-radius: 4px;
+    background-color: rgba(198, 198, 198, 0.4);
+    display: grid;
+    width: 40%;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photoBar img{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+    display: block;
+  }
+
+  .photoBar iframe{
+    display: block;
+    width: 100%;
+  }
+
+  .description{
+    margin: 4px;
+    width: 60%;
+    padding: 8px;
+  }
+
+  .description p{
+    padding-bottom: 4px;
+    padding-left: 8px;
+  }
+
+  hr{
+    border: none;
+    height: 1px;
+    background-color: #33333370;
+  }
+</style>
+
+<div class="border">
+  <div class="logoContainer">
+    <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCaseLogo.png" alt="Edge Case Logo" class="logo">
+  </div>
+  <h3 class="download"><a href="https://smnthgn.itch.io/edge-case" target="_blank">Download on Itch.io</a></h3>
+  <br>
+  <div class="content">
+    <div class="description">
+      <p><em>Edge Case</em> is an exploration game made in Unreal Engine.</p>
+      <hr>
+      <p style="padding: 0 14px;"><i>Search for your lost sibling by exploring an abandoned game studio. Switch between the real world and the game world as you play the studios unfinished game for hints to progress.</i></p>
+      <hr>
+      <p>It was made with a group for the capstone assignment at Wake Tech, an 8 week game jame. The theme for that year was "Abandonware".</p>
+      <p>My group and I did a lot on this project. While initially joining the group as an artist, I have experience programming and ended up doing a lot of scripting work as well.</p>
+      <p>My contributions include:</p>
+        <ul>
+          <li>Helping plan the intended path through the office and Genesis (the in-game VR game)</li>
+          <li>Planning, whiteboxing, and level scripting for Genesis</li>
+          <li>Modeling, rigging, and animating the player arms</li>
+          <li>Interactable highlight shader and scripts</li>
+          <li>Objective UI popup and scripts</li>
+          <li>Office and Genesis note systems</li>
+          <li>Handwritten typeface for notes</li>
+        </ul>
+      <p>This project taught me a lot, and gave me a lot of experience working with a team on a game from start to finish. </p>
+    </div>
+    <div class="photoBar">
+      <iframe height="252" src="https://www.youtube.com/embed/6kiCKehnJOA?si=x8VHSz7p4qM4CpkP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCase_Parking.png">
+      <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCase_Lab.png">
+    </div>
+
+  </div>
+</div>
   </div>
 </body>
 

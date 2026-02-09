@@ -6,8 +6,9 @@ permalink: /about
 <style>
   .border {
     background-color: rgb(156, 156, 181);
-    margin-left: 30px;
-    margin-right: 30px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .title {
@@ -51,7 +52,7 @@ permalink: /about
     <b>About Me</b>
   </h1>
   <div class="about">
-    <img src="assets/images/Self_Pic.jpg" alt="Picture of me" class="selfPic">
+    <img src="assets/images/about/Self_Pic.jpg" alt="Picture of me" class="selfPic">
     <h2>Hello!</h2>
     <h3>I was born and raised in Chapel Hill, NC, and grew up playing all kinds of games.</h3>
     <p>I find that I'm naturally curious in how games work, and am constantly thinking about the behind-the-scenes

@@ -85,21 +85,52 @@
   .download{
     text-align: center;
     margin: 6px;
-    padding-bottom: 16px;
   }
   
+  .content{
+    display: flex;
+    padding: 0 10px;
+  }
+
   .photoBar{
-    border: 4px solid rgba(50, 75, 120, 0.5);
-    display: inline-block;
-    justify-content: right;
+    border: 3px solid rgba(15, 100, 120, 0.85);
+    border-radius: 4px;
+    background-color: rgba(198, 198, 198, 0.4);
+    display: grid;
+    width: 40%;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .screenshotSide{
-    width: 25%;
+  .photoBar img{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+    display: block;
   }
 
-  p{
-    padding: 16px;
+  .photoBar iframe{
+    display: block;
+    width: 100%;
+  }
+
+  .description{
+    margin: 4px;
+    width: 60%;
+    padding: 8px;
+  }
+
+  .description p{
+    padding-bottom: 4px;
+    padding-left: 8px;
+  }
+
+  hr{
+    border: none;
+    height: 1px;
+    background-color: #33333370;
   }
 </style>
 
@@ -107,14 +138,34 @@
   <div class="logoContainer">
     <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCaseLogo.png" alt="Edge Case Logo" class="logo">
   </div>
-  <h3 class="download"><a href="https://smnthgn.itch.io/edge-case">Download on Itch.io</a></h3>
+  <h3 class="download"><a href="https://smnthgn.itch.io/edge-case" target="_blank">Download on Itch.io</a></h3>
   <br>
-  <div class="photoBar">
-    <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCase_Parking.png" class="screenshotSide">
-  </div>
-  <div class="description">
-    <p>Edge Case is a 3D exploration game made in Unreal Engine. It was made in a group with other Wake Tech students for our final project.</p>
-    <p>test</p>
+  <div class="content">
+    <div class="description">
+      <p><em>Edge Case</em> is an exploration game made in Unreal Engine.</p>
+      <hr>
+      <p style="padding: 0 14px;"><i>Search for your lost sibling by exploring an abandoned game studio. Switch between the real world and the game world as you play the studios unfinished game for hints to progress.</i></p>
+      <hr>
+      <p>It was made with a group for the capstone assignment at Wake Tech, an 8 week game jame. The theme for that year was "Abandonware".</p>
+      <p>My group and I did a lot on this project. While initially joining the group as an artist, I have experience programming and ended up doing a lot of scripting work as well.</p>
+      <p>My contributions include:</p>
+        <ul>
+          <li>Helping plan the intended path through the office and Genesis (the in-game VR game)</li>
+          <li>Planning, whiteboxing, and level scripting for Genesis</li>
+          <li>Modeling, rigging, and animating the player arms</li>
+          <li>Interactable highlight shader and scripts</li>
+          <li>Objective UI popup and scripts</li>
+          <li>Office and Genesis note systems</li>
+          <li>Handwritten typeface for notes</li>
+        </ul>
+      <p>This project taught me a lot, and gave me a lot of experience working with a team on a game from start to finish. </p>
+    </div>
+    <div class="photoBar">
+      <iframe height="252" src="https://www.youtube.com/embed/6kiCKehnJOA?si=x8VHSz7p4qM4CpkP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCase_Parking.png">
+      <img src="/jacobwaugh.github.io/assets/images/edgecase/EdgeCase_Lab.png">
+    </div>
+
   </div>
 </div>
   </div>

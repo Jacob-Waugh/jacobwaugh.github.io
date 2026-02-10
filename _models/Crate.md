@@ -47,7 +47,7 @@ permalink: /models/crate
 </style>
 
 <div class="border">
-  <h1>Photorealistic Crate</h1>
+  <h1>{{ page.name }}</h1>
   <img src="{{ site.baseurl }}/assets/images/crate/crate1.jpg" alt="Crate render 1">
   <div class="description">
     <p>This is a photorealistic ammo box based off a real picture. This model was my first time using ZBrush, using it to make a high-poly bake for the added detail on the wood.</p>

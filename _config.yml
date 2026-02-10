@@ -5,6 +5,9 @@ collections:
   models:
     output: true
     permalink: /models/:path/
+  animations:
+    output: true
+    permalink: /animations/:path/
 baseurl: /jacobwaugh.github.io
 url: "https://jacobwaugh.com/"
 plugins:

@@ -60,7 +60,7 @@ body{
     padding-top: 60px;
 }
 
-.header .sideNav a, .dropdownBtn{
+.header .sideNav .sideLink, .dropdownBtn{
     font-size: 28px;
     padding: 16px 16px 16px 32px;
     color: rgba(126, 117, 159, 0.75);
@@ -73,12 +73,16 @@ body{
     border: none;
 }
 
-.header .sideNav a:hover, .dropdownBtn:hover{
+.header .sideNav .sideLink:hover, .dropdownBtn:hover{
     color: rgb(187, 173, 232);
 }
 
-.header .sideNav a.navCurrent{
+.header .sideNav .navCurrent{
     color: rgb(187, 173, 232);
+}
+
+.header .sideNav .icon{
+    display: inline;
 }
 
 .dropdownBox{
@@ -106,7 +110,9 @@ body{
 
 }
 
-
+.iconBar{
+    display: inline;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

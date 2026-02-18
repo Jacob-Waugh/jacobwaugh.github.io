@@ -5,7 +5,7 @@ function openNav(){
 
 function closeNav(){
   document.getElementById("sideNav").style.width = "0px";
-  document.body.style.backgroundColor = "rgb(58, 58, 74)";
+  document.body.style.backgroundColor = "rgb(215, 215, 215);";
   this.innerHTML = "Projects &#9662;";
 }
 
@@ -31,17 +31,23 @@ for (i = 0; i < dropdown.length; i++){
 //Header scroll effect:
 window.onscroll = function() {scrollFunction()};
 
+var header = document.getElementById("header");
+var headerName = document.getElementById("name");
+var headerSubtitle = document.getElementById("subtitle");
+
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90){
-    document.getElementById("header").style.padding = "10px 10px";
-    document.getElementById("name").style.fontSize = "32px";
-    document.getElementById("name").style.paddingLeft = "64px";
-    document.getElementById("name").style.paddingTop = "12px";
+    header.style.padding = "10px 10px";
+    headerName.style.fontSize = "32px";
+    headerName.style.paddingLeft = "64px";
+    headerName.style.paddingTop = "12px";
+    headerSubtitle.style.paddingLeft = "64px";
   }
   else{
-    document.getElementById("header").style.padding = "7% 10px";
-    document.getElementById("name").style.fontSize = "56px";
-    document.getElementById("name").style.paddingLeft = "200px";
-    document.getElementById("name").style.paddingTop = "0px";
+    header.style.padding = "5% 10px";
+    headerName.style.fontSize = "56px";
+    headerName.style.paddingLeft = "200px";
+    headerName.style.paddingTop = "0px";
+    headerSubtitle.style.paddingLeft = "200px";
   }
 }

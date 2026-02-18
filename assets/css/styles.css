@@ -2,19 +2,19 @@ body{
     margin: 0;
     transition: background-color .5s;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(43, 43, 74);
+    background-color: rgb(215, 215, 215);
 }
 
 /* HEADER & NAV PANEL */
 .header{
-    background-color: rgba(197, 197, 197, 0.925);
+    background-color: rgba(70, 90, 123, 0.925);
     overflow: hidden;
     position: fixed;
     font-size: 24px;
     top: 0;
     width: 100%;
     z-index: 6;
-    padding: 7% 10px;
+    padding: 5% 10px;
     transition: 0.4s;
 }
 
@@ -38,10 +38,19 @@ body{
     float: left;
     transition: 0.4s;
     margin: auto;
+    color: rgb(215, 215, 215);
+}
+
+.header .subtitle{
+    position: absolute;
+    padding-left: 200px;
+    margin-top: 26px;
+    font-size: 20px;
+    color: rgb(185, 185, 185);
 }
 
 .header span{
-    padding-right: 64px;
+    padding-right: 90px;
     float: right;
     cursor: pointer;
     font-size: 48px;
@@ -61,9 +70,9 @@ body{
 }
 
 .header .sideNav .sideLink, .dropdownBtn{
-    font-size: 28px;
+    font-size: 32px;
     padding: 16px 16px 16px 32px;
-    color: rgba(126, 117, 159, 0.75);
+    color: rgba(153, 144, 188, 0.75);
     display: block;
     transition: 0.3s;
     text-decoration: none;
@@ -85,10 +94,14 @@ body{
     display: inline;
 }
 
+.header .sideNav .pageBox{
+    margin-bottom: 16px;
+}
+
 .dropdownBox{
     display: none;
     padding-left: 8px;
-    background-color: rgba(99, 85, 117, 0.75);
+    background-color: rgba(153, 144, 188, 0.75);
     transition: 0.3s;
 }
 
@@ -106,12 +119,30 @@ body{
     position: absolute;
     top: 0;
     left: 0px;
-    font-size: 36;
+    font-size: 36px;
+    text-decoration: none;
+    color: rgba(153, 144, 188, 0.75);
+    transition: 0.3s;
+    padding-left: 10px;
+}
 
+.header .sideNav .closeBtn:hover{
+    color: rgb(187, 173, 232);
+    transition: 0.3s;
 }
 
 .iconBar{
     display: inline;
+    margin: 30px 0 0 30px;
+}
+
+.iconBar .icon{
+    color: rgba(153, 144, 188, 0.75);
+    transition: 0.3s;
+}
+
+.iconBar .icon:hover{
+    color: rgb(187, 173, 232);
 }
 
 @media screen and (max-height: 450px) {

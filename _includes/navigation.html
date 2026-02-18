@@ -1,31 +1,36 @@
 <div id="header" class="header">
 
   <h1 id="name">Jacob Waugh</h1>
+  <br>
+  <h3 class="subtitle" id="subtitle">Game Design, Systems, Art</h3>
   <span onclick="openNav()">&#9776;</span>
   <nav id="sideNav" class="sideNav">
     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-    {% for item in site.data.navigation %}
-    {% if item.dropdown == "no" %}
-    <a href="{{ site.baseurl }}/{{ item.link }}" class="sideLink" {% if page.url==item.link %} class="pageLink navCurrent" {% endif %}>
-      {{ item.name }}
-    </a>
-    {% endif %}
-    {% endfor %}
-    <div class="dropdownContainer" hidden>
-      <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
-      <div class="dropdownBox">
-        {% for item in site.data.navigation %}
-          {% if item.dropdown == "yes" %}
-            <a href="{{ item.link }}" class="dropdownLink" {% if page.url==item.link %} class="navCurrent dropdownLink" {% endif %}>
-            {{ item.name }}
-            </a>
-          {% endif %}
-        {% endfor %}
+    <div class="pageBox">
+      {% for item in site.data.navigation %}
+      {% if item.dropdown == "no" %}
+      <a href="{{ site.baseurl }}/{{ item.link }}" class="sideLink" {% if page.url==item.link %} class="pageLink navCurrent" {% endif %}>
+        {{ item.name }}
+      </a>
+      {% endif %}
+      {% endfor %}
+      <div class="dropdownContainer" hidden>
+        <button class="dropdownBtn">Projects &#9662;<i class="caret"></i></button>
+        <div class="dropdownBox">
+          {% for item in site.data.navigation %}
+            {% if item.dropdown == "yes" %}
+              <a href="{{ item.link }}" class="dropdownLink" {% if page.url==item.link %} class="navCurrent dropdownLink" {% endif %}>
+              {{ item.name }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
     </div>
+
     <div class="iconBar">
-      <a href="mailto:jacob@waughhoo.com" class="icon" target="_blank" aria-label="Email"><i class="fa-regular fa-envelope fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/jacobwaugh-/" class="icon" target="_blank" aria-label="LinkedIn page"><i class="fa-brands fa-square-linkedin fa-lg" style="color: #ffffff;"></i></a>
+      <a href="mailto:jacob@waughhoo.com" class="icon" target="_blank" aria-label="Email"><i class="fa-regular fa-envelope fa-xl"></i></a>
+      <a href="https://www.linkedin.com/in/jacobwaugh-/" class="icon" target="_blank" aria-label="LinkedIn page"><i class="fa-brands fa-square-linkedin fa-xl"></i></a>
     </div>
   </nav>
 </div>

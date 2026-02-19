@@ -71,3 +71,12 @@
     height: 1px;
     background-color: #33333370;
   }
+
+  h3{
+    margin: 0 8px 0;
+  }
+
+  .devlog{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 8px 0;
+  }

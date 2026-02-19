@@ -5,47 +5,7 @@ title: Jacob Waugh - Photoreal Crate
 tags: 3d-model
 permalink: /models/crate
 ---
-<style>
-  .border {
-    background-color: rgb(156, 156, 181);
-    border-radius: 5px;
-    margin: 40px;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .border img{
-    width: 50%;
-  }
-
-  .description{
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .imgContainer{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .imgContainer img{
-    width: 45%;
-    margin: 6px;
-  }
-
-  .sketchfab-embed-wrapper{
-    width: 512px;
-    height: 384px;
-    margin: auto;
-  }
-
-  .sketchfab-embed-wrapper iframe{
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/modelStyles.css">
 <div class="border">
   <h1>{{ page.name }}</h1>
   <img src="{{ site.baseurl }}/assets/images/crate/crate1.jpg" alt="Crate render 1">

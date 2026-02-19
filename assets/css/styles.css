@@ -22,8 +22,8 @@ body{
     font-weight: bold;
     text-decoration: none;
     outline: solid rgba(221, 215, 228, 0.721);
-    background-color: rgba(141, 99, 180, 0.37);
-    color: rgb(71, 45, 104);
+    background-color: rgba(99, 126, 180, 0.37);
+    color: rgb(45, 50, 104);
     border-radius: 10px;
     padding: 6px;
     font-size: 16px;
@@ -63,7 +63,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(60, 43, 72);
+    background-color: rgb(43, 47, 72);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -72,7 +72,7 @@ body{
 .header .sideNav .sideLink, .dropdownBtn{
     font-size: 32px;
     padding: 16px 16px 16px 32px;
-    color: rgba(153, 144, 188, 0.75);
+    color: rgba(144, 173, 188, 0.75);
     display: block;
     transition: 0.3s;
     text-decoration: none;
@@ -83,11 +83,11 @@ body{
 }
 
 .header .sideNav .sideLink:hover, .dropdownBtn:hover{
-    color: rgb(187, 173, 232);
+    color: rgb(164, 196, 212);
 }
 
 .header .sideNav .navCurrent{
-    color: rgb(187, 173, 232);
+    color: rgb(164, 196, 212);
 }
 
 .header .sideNav .icon{
@@ -101,12 +101,12 @@ body{
 .dropdownBox{
     display: none;
     padding-left: 8px;
-    background-color: rgba(153, 144, 188, 0.75);
+    background-color: rgba(144, 173, 188, 0.75);
     transition: 0.3s;
 }
 
 .dropdownBox a.dropdownLink{
-    color:rgb(213, 208, 218);
+    color:rgba(144, 173, 188, 0.75);
     font-size: 20px;
 }
 
@@ -121,13 +121,13 @@ body{
     left: 0px;
     font-size: 36px;
     text-decoration: none;
-    color: rgba(153, 144, 188, 0.75);
+    color: rgba(144, 173, 188, 0.75);
     transition: 0.3s;
     padding-left: 10px;
 }
 
 .header .sideNav .closeBtn:hover{
-    color: rgb(187, 173, 232);
+    color: rgb(164, 196, 212);
     transition: 0.3s;
 }
 
@@ -137,12 +137,12 @@ body{
 }
 
 .iconBar .icon{
-    color: rgba(153, 144, 188, 0.75);
+    color: rgba(144, 173, 188, 0.75);
     transition: 0.3s;
 }
 
 .iconBar .icon:hover{
-    color: rgb(187, 173, 232);
+    color: rgb(164, 196, 212);
 }
 
 @media screen and (max-height: 450px) {

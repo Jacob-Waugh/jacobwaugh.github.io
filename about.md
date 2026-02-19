@@ -5,7 +5,7 @@ permalink: /about
 ---
 <style>
   .border {
-    background-color: rgb(156, 156, 181);
+    background-color: rgba(165, 188, 208, 0.7);
     border-radius: 5px;
     margin-left: 40px;
     margin-right: 40px;

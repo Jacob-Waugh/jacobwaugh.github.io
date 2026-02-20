@@ -30,13 +30,17 @@
     padding: 0 10px;
   }
 
+  .photoBarGrid{
+    position:absolute;
+    margin-left: 60%;
+  }
+
   .photoBar{
     border: 3px solid rgba(15, 100, 120, 0.85);
     border-radius: 4px;
     background-color: rgba(198, 198, 198, 0.4);
     display: grid;
-    width: 40%;
-    margin: 5px;
+    margin-right: 10%;
     align-items: center;
     justify-content: center;
   }
@@ -46,7 +50,7 @@
     height: auto;
     margin: auto;
     padding: 10px 0;
-    display: block;
+    display: grid;
   }
 
   .photoBar iframe{
@@ -72,11 +76,15 @@
     background-color: #33333370;
   }
 
-  h3{
-    margin: 0 8px 0;
+  h3, h4, h5{
+    margin: 2px 8px 0;
   }
 
   .devlog{
     font-family: 'Courier New', Courier, monospace;
+    margin: 0 8px 0;
+  }
+
+  .description video{
     margin: 0 8px 0;
   }

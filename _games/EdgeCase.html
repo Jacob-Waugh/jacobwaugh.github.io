@@ -9,39 +9,87 @@ tags: game
   <div class="logoContainer">
     <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCaseLogo.png" alt="Edge Case Logo" class="logo">
   </div>
-  <h3 class="download"><a href="https://smnthgn.itch.io/edge-case" target="_blank">Download on Itch.io</a></h3>
+  <h2 class="download"><a href="https://smnthgn.itch.io/edge-case" target="_blank"><em>View and download
+        on Itch.io</em></a></h2>
   <br>
+  <div class="photoBarGrid">
+    <div class="photoBar">
+      <iframe src="https://www.youtube.com/embed/6kiCKehnJOA?si=x8VHSz7p4qM4CpkP" title="YouTube video player"
+        frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCase_Parking.png">
+      <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCase_Lab.png">
+    </div>
+  </div>
   <div class="content">
     <div class="description">
       <p><em>Edge Case</em> is an exploration game made in Unreal Engine.</p>
       <hr>
-      <p style="padding: 0 14px;"><i>Search for your lost sibling by exploring an abandoned game studio. Switch between the real world and the game world as you play the studios unfinished game for hints to progress.</i></p>
+      <p style="padding: 0 14px;"><i>Search for your lost sibling by exploring an abandoned game studio. Switch between
+          the real world and the game world as you play the studios unfinished game for hints to progress.</i></p>
       <hr>
-      <p>It was made and presented with a group for the capstone assignment at Wake Tech, an 8 week game jame. The theme for that year was "Abandonware".</p>
-      <p>My group and I did a lot on this project. I had to wear many hats, working on design documentation, player modeling and animations, and designing and scripting gameplay, level, and UI/UX systems using Blueprint</p>
+      <p>It was made and presented with a group for the capstone assignment at Wake Tech, an 8 week game jame. The theme
+        for that year was "Abandonware".</p>
+      <p>My group and I did a lot on this project. I had to wear many hats, working on design documentation, player
+        modeling and animations, and designing and scripting gameplay, level, and UI/UX systems using Blueprint</p>
       <p>A list of my main contributions:</p>
-        <ul>
-          <li>Helping plan the intended path through the office and Genesis (the in-game VR world)</li>
-          <li>Planning, whiteboxing, and level scripting for Genesis</li>
-          <li>Modeling, rigging, animating, and scripting the player model</li>
-          <li>Interactable highlight system and visual</li>
-          <li>Objective UI popup system and visual</li>
-          <li>Office and Genesis note systems</li>
-          <li>Handwritten typeface for notes</li>
-          <li>Playtesting and bug write-ups</li>
-        </ul>
-      <p>This project taught me a lot, and gave me a lot of experience working with a team on a game from start to finish. </p>
+      <ul>
+        <li>Helping plan the intended path through the office and Genesis (the in-game VR world)</li>
+        <li>Planning, whiteboxing, and level scripting for Genesis</li>
+        <li>Modeling, rigging, animating, and scripting the player model</li>
+        <li>Interactable highlight system and visual</li>
+        <li>Objective UI popup system and visual</li>
+        <li>Office and Genesis note systems</li>
+        <li>Handwritten typeface for notes</li>
+        <li>Playtesting and bug write-ups</li>
+      </ul>
+      <p>This project taught me a lot, and gave me a lot of experience working with a team on a game from start to
+        finish. </p>
       <h3>Devlogs:</h3>
       <ul>
-        <li><h4 class="devlog"><a href="https://smnthgn.itch.io/edge-case/devlog/972567/devlog-5-interaction-outline-and-prompt" target="_blank">Interaction Prompt</a></h4></li>
-        <li><h4 class="devlog"><a href="https://smnthgn.itch.io/edge-case/devlog/991324/devlog-11-updated-outline-shader" target="_blank">Outline Shader</a></h4></li>
+        <li>
+          <h4 class="devlog"><a
+              href="https://smnthgn.itch.io/edge-case/devlog/972567/devlog-5-interaction-outline-and-prompt"
+              target="_blank">Interaction Prompt</a></h4>
+        </li>
+        <li>
+          <h4 class="devlog"><a href="https://smnthgn.itch.io/edge-case/devlog/991324/devlog-11-updated-outline-shader"
+              target="_blank">Outline Shader</a></h4>
+        </li>
       </ul>
+      <br>
+      <h3>Showcases:</h3>
+      <h4>Interaction system</h4>
+      <p>The interaction system works by having a collider around objects that triggers a raycast. That raycast can only
+        hit the interactable object, triggering the shader and prompt. </p>
+      <video autoplay loop muted width="500" height="300"
+        src="{{ site.baseurl }}/assets/images/edgecase/OutlineDemo.mp4"
+        alt="video showcasing interaction system in test level"></video>
+      <video autoplay loop muted width="500" height="300" src="{{ site.baseurl }}/assets/images/edgecase/NoteDemo.mp4"
+        alt="video showcasing note system"></video>
+      <p>I designed the system to be as modular as
+        possible, allowing any actor to be made interactable with minimal steps.</p>
+      <img src="{{ site.baseurl }}/assets/images/edgecase/OutlinedObjects.jpg" alt="various outlined objects"
+        width="489" height="500">
+      <p>The outline shader is made to work on any actor of any size, even working with transparent textures. I go into
+        further detail about the shader in the outline shader devlog linked above</p>
+      <h5>View blueprints (via blueprintUE.com):</h5>
+      <ul>
+        <li><a href="https://blueprintue.com/blueprint/n54ijez8/" target="_blank">Collider blueprint</a></li>
+        <li><a href="https://blueprintue.com/blueprint/8tuamz6d/" target="_blank">Raycast function blueprint</a></li>
+        <li><a href="https://blueprintue.com/blueprint/0308gtbi/" target="_blank">Interact popup blueprint component</a>
+        </li>
+      </ul>
+      <br>
+      <h4>Player Arms</h4>
+      <p>As mentioned, I modeled, rigged, animated, and programmed the player arms for <i>Edge Case</i></p>
+      <p>I modeled , unwrapped UVs, rigged, and skinned the arms in Maya. I made controllers, sockets, and animations in
+        Unreal with Control Rig, before finally making the animation blueprint.</p>
+      <p>The flashlight and headset animations were made individually and blended together, allowing the animations to
+        trigger events seperatly when needed, such as the VR transition effect or the flashlight visibility.</p>
+      <p><a href="https://blueprintue.com/blueprint/mv5it2pw/" target="_blank">Animation blueprint</a></p>
+      <video autoplay loop muted width="500" height="300"
+        src="{{ site.baseurl }}/assets/images/edgecase/AnimationDemo.mp4"
+        alt="video showcasing flashlight and headset animations"></video>
     </div>
-    <div class="photoBar">
-      <iframe src="https://www.youtube.com/embed/6kiCKehnJOA?si=x8VHSz7p4qM4CpkP" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCase_Parking.png">
-      <img src="{{ site.baseurl }}/assets/images/edgecase/EdgeCase_Lab.png">
-    </div>
-
   </div>
 </div>
